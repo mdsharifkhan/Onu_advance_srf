@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+@import "all.min.css";
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    padding-top: 100px;
+}
+.row{
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-3{
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-6{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-11{
+    float: left;
+    width: 91.6666%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h6, p, figure{
+    margin: 0;
+}
+h4{
+    color: #040404;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+h5{
+    color: #030303;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.img-fluid{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.navbar-brand{
+    display: inline-block;
+}
+section .container > p{
+    color: #262627;
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+section .container > .row{
+    margin-top: 60px;
+}
+
+/*Style for Header*/
+header{
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 198px;
+}
+header .container{
+    overflow: hidden;
+}
+header .navbar-brand{
+    float: left;
+    width: 168px;
+}
+
+header .container img{
+    margin-top: 18px;
+}
+header nav{
+    float: right;
+    margin-top: 40px;
+}
+header .container div{
+    clear: both;
+}
+header nav li{
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 35px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+
+}
+
+header nav .active a, header nav li a:hover{
+    color: #87d37c;
+}
+header .container div{
+    width: 610px;
+    margin: auto;
+    margin-top: 170px;
+
+}
+header .container div h2, header .container div h3{
+    color: #FFF;
+}
+header .container div h2{
+    font-size: 35px;
+}
+header .container div h1{
+    font-size: 85px;
+    color: #fefbfc;
+    width: 640px;
+    border: 3px solid #fdfdfd;
+    padding: 42px 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+header .container div h1 span{
+    color: #87d37c;
+}
+
+header .container div h3{
+    font-size: 32px;
+}
+
+/*Style for About Us*/
+
+#about-us{
+    background-color: #fdfafa;
+    padding-bottom: 100px;
+}
+#about-us .container .row h5{
+    color: #030303;
+    font-size: 23px;
+}
+#about-us .container .row p:last-child{
+    text-align: justify;
+    font-size: 14px;
+}
+#about-us .container .row .col-3:hover h5, #about-us .container .row .col-3:hover p:first-child{
+    color: #87d37c;
+}
+
+/*Style for Services Section*/
+
+#services{
+    background-color: #e1e1e1;
+    padding-bottom: 100px;
+}
+
+/*Style for Our Pricing Section*/
+#our-pricing .row .col-3 > div{
+    background-color: #39393a;
+    width: 240px;
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+#our-pricing .row .col-3 div h5{
+    color: #fefdfc;
+    font-size: 30px;
+    width: 144px;
+    height: 144px;
+    border: 5px solid #f9f8fc;
+    margin: auto;
+    border-radius: 100%;
+    padding: 30px 0 0 32px;
+    font-family: 'Oswald', sans-serif;
+}
+#our-pricing .row .col-3 div h5 sup, #our-pricing .row .col-3 div h5 span{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#our-pricing .row .col-3 div h5 span:last-child{
+    font-size: 19px;
+    display: inline-block;
+    position: relative;
+    bottom: 13px;
+    left: 15px;
+}
+#our-pricing .row .col-3 div div{
+    width: 130px;
+    padding-top: 25px;
+    margin: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#our-pricing .row .col-3 div div p{
+    color: #fffefe;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #fffefe;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#our-pricing .row .col-3 div div button{
+    color: #39393a;
+    padding: 8px 15px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+#our-pricing .row .col-3:hover div{
+    background-color: #87d37c;
+}
+#our-pricing .row .col-3:hover div h5{
+    background-color: #FFF;
+    color: #87d37c;
+}
+#our-pricing .row .col-3:hover div div button{
+    color: #87d37c;
+    border: none;
+}
+
+/*Style for company info*/
+
+#company-info > div{
+    background-image: url("../img/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
+#company-info > div .row .col-3 p:first-child{
+    color: #f7efef;
+    font-size: 55px;
+    font-weight: bold;
+}
+#company-info > div .row .col-3 p:last-child{
+    color: #f7efef;
+    font-size: 18px;
+}
+#company-info > div .row .col-3 > div{
+    background-color: rgba(0,0,0,0.3);
+    width: 255px;
+    border: 1px solid rgba(247, 249, 249, 0.3);
+    padding-top: 22px;
+    padding-bottom: 18px;
+}
+
+/*Style for contact us*/
+#contact-us{
+    margin-bottom: 125px;
+}
+#contact-us .row .col-3 p > i{
+    color: #232424;
+    margin-bottom: 40px;
+}
+#contact-us .row .col-3 h6{
+    color: #2a2a2a;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#contact-us .row .col-3 p a{
+    color: #2a2a2a;
+    font-size: 14px;
+    text-decoration: none;
+}
+#contact-us .row .col-3 address{
+    font-style: normal;
+    font-size: 14px;
+}
+#contact-us .row .col-3:hover p i, #contact-us .row .col-3:hover h6{
+    color: #87d37c;
+}
+#contact-us .row .active p i, #contact-us .row .active h6{
+    color: #87d37c;
+}
+
+/*Style for Form*/
+
+#form{
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+}
+#form .form-group{
+    margin-bottom: 16px;
+}
+#form .form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #565656;
+    background-color: #fff;
+    border: none;
+    margin-bottom:18px;
+    font-style: italic;
+}
+
+#form textarea{
+    text-align: left;
+}
+#form .btn{
+    display: inline-block;
+    font-weight: bold;
+    color: #fefefe;
+    text-align: center;
+    background-color: #87d37c;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/*Style for Google Map*/
+#map div{
+    position: relative;
+    height: 600px;
+}
+#map iframe{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
